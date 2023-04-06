@@ -1,0 +1,23 @@
+@import "src/assets/scss/variables";
+
+#head-sign{
+  display: flex;
+  flex-direction: row;
+  padding: 5px 10px;
+  font-family: 'Inter-Regular',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white;
+
+  &:hover {
+    color: #64748B;
+    transition: $transition;
+  }
+
+  svg{
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}

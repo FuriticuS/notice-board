@@ -1,7 +1,19 @@
+@import "src/assets/scss/variables";
+
 header {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   width: 100%;
   height: 52px;
-  background: #1E293B;
+  background: $blue-dark;
+
+  .head{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
 }

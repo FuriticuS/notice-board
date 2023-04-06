@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="card-image">
+    <img class="card-image__png" [src]="card.imgSrc" />
+  </div>
+  <div class="card-description">
+    <h2 class="card-description__title">{{ card.title }}</h2>
+    <p class="card-description__price">{{ card.price | currency: '₽' }}</p>
+    <p class="card-description__address">{{ card.address }}</p>
+    <p class="card-description__date">{{ card.createdAt }}</p>
+  </div>
+</div>

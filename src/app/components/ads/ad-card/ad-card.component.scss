@@ -1,0 +1,36 @@
+@import "src/assets/scss/variables";
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  &-image{
+    display: flex;
+    margin-bottom: 8px;
+  }
+
+  &-description{
+    display: flex;
+    flex-direction: column;
+
+    &__title{
+      font-family: 'Inter-Medium',sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+      color: $blue-light;
+    }
+    &__price{
+      font-family: 'Inter-Medium',sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__address{
+      color: $blue-gray;
+    }
+    &__date{
+      color: $blue-gray;
+    }
+  }
+}

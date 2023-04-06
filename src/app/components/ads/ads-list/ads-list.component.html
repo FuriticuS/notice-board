@@ -1,0 +1,14 @@
+<div class="ads">
+  <div class="container">
+    <div class="ads-blocks">
+      <h2 class="page-title">Рекомендации для вас</h2>
+
+      <ul class="ads-lists">
+        <li *ngFor="let card of data">
+          <app-ad-card [card]="card"></app-ad-card>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
