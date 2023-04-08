@@ -1,14 +1,14 @@
-<div class="grid grid_cards">
-  <ng-container >
-    <div class="ads-blocks xl:col-3 lg:col-4 md:col-6 sm:col-12">
+<div class="ads">
+  <div class="container" >
+    <div class="ads-blocks ">
       <h2 class="page-title">Рекомендации для вас</h2>
 
-      <ul class="ads-lists">
-        <li *ngFor="let card of data">
+      <ul class="grid ads-lists">
+        <li *ngFor="let card of data" class="xl:col-3 lg:col-4 md:col-6 sm:col-12">
           <app-ad-card [card]="card"></app-ad-card>
         </li>
       </ul>
     </div>
-  </ng-container>
+  </div>
 </div>
 

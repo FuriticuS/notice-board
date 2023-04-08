@@ -3,10 +3,23 @@
 .card {
   display: flex;
   flex-direction: column;
+  width: 306px;
+  cursor: pointer;
+
+  &:hover img{
+    transform: scale(1.2);
+    transition: $transition;
+  }
 
   &-image{
     display: flex;
+    width: 100%;
     margin-bottom: 8px;
+    overflow: hidden;
+
+    img{
+      width: 100%;
+    }
   }
 
   &-description{
@@ -32,5 +45,12 @@
     &__date{
       color: $blue-gray;
     }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .card{
+    width: 100%;
+    text-align: center;
   }
 }

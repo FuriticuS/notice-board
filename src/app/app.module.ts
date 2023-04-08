@@ -10,6 +10,7 @@ import { AdsListComponent } from './components/ads/ads-list/ads-list.component';
 import { AdCardComponent } from './components/ads/ad-card/ad-card.component';
 
 import {ButtonModule} from "primeng/button";
+import {InputTextModule} from "primeng/inputtext";
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {ButtonModule} from "primeng/button";
     BrowserModule,
     AppRoutingModule,
     ButtonModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,3 +6,11 @@
     flex-direction: row;
   }
 }
+
+.grid > .col, .grid > [class*=col] {
+  margin-bottom: 32px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
