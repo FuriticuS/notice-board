@@ -11,9 +11,13 @@ export class AdsListComponent implements OnInit{
 
   constructor(
     private addService: AdsService,
+    private _postsServices: AdsService
   ) {}
 
   ngOnInit() {
     this.data = this.addService.getData();
+    this._postsServices.getPosts().subscribe(posts =>{
+      console.log(posts);
+    });
   }
 }
